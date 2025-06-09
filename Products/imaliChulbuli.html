@@ -131,7 +131,7 @@
 				<div class="d-flex flex-wrap justify-content-between align-items-center w-100 position-relative">
 					<div class="logo d-lg-flex d-xl-none">
 						<a href="../index.html">
-							<img src="../OurImages/Logo/imlilogo.png" alt="Mayur GELS" />
+							<img src="../OurImages/Logo/MayurLogoFinal.png" alt="Mayur GELS" />
 						</a>
 						<!-- <div class="shop_btn mbl">
 							<a href="#">Shop Now <i class="fas fa-shopping-cart"></i></a>
@@ -199,7 +199,7 @@
 											</li> -->
 											<li id="menu-item-737"
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-737">
-												<a href="#">Sweet Heart Pops</a>
+												<a href="SweetheratPop.html">Sweet Heart Pops</a>
 											</li>
 										</ul>
 									</li>
@@ -211,14 +211,14 @@
 							</div>
 							<div class="logo d-xl-flex d-none">
 								<a href="../index.html">
-									<img src="../OurImages/Logo/imlilogo.png" alt="Mayur GELS" />
+									<img src="../OurImages/Logo/MayurLogoFinal.png" alt="Mayur GELS" />
 								</a>
 							</div>
 							<div class="navmenu">
 								<ul id="menu-header-menu-right" class="">
 									<li id="menu-item-873"
 										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-873">
-										<a href="../OurPresence/OurPresence.html">Our Presence/a>
+										<a href="../OurPresence/OurPresence.html">Our Presence</a>
 									</li>
 									<li id="menu-item-232"
 										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232">
@@ -250,56 +250,91 @@
 		</header>
 		<main>
 
+			<!-- ---------------- New Banner ----------------------------- -->
+
 			<section class="inner-header">
-				<div class="breadcrumbrowblue">
+				<div class="imliproductbg breadcrumbrowblue">
 					<div class="container">
-						<div class="pagetitle imliPage">
-							Imli Chulbuli</div>
-						<!-- <ul class="bread-crumb">
-							<li class="breadcrumb_links_path_parent"><a href="../index.html" title="Home">Home</a></li>
-							<li class="active">About</li>
-						</ul> -->
-
-
-						<style>
-							.imliPage {
-								background-image: url('../OurImages/Banner/imlibg.jpg');
-								/* Adjust path to your image */
-								background-size: cover;
-								/* Ensures the image covers the text area */
-								background-repeat: no-repeat;
-								-webkit-background-clip: text;
-								/* Clips the image to the text */
-								-webkit-text-fill-color: transparent;
-								/* Makes the text transparent to show the image */
-								font-size: 110px;
-								/* Adjust font size as needed */
-								text-align: center;
-								text-shadow: none !important;
-								margin: 0;
-								-webkit-font-smoothing: antialiased;
-							}
-
-							@media screen and (max-width: 490px) {
-								.imliPage {
-									font-size: 80px;
-								}
-
-							}
-						</style>
-
-
+						<div class="logo-container">
+							<img class="logo-image lazyload" src="../OurImages/Logo/imlilogo.png" alt="Company Logo"
+								loading="lazy" />
+						</div>
 					</div>
 				</div>
 				<div class="divider-blue-inner w-100">
-					<img class="lazyload" src="../OurImages/Banner/Blue-Divider.png" alt="divicer blue Object" />
+					<img class="lazyload" src="../OurImages/Banner/imliproductdivider.png" alt="divider blue Object" />
 				</div>
-				<!-- <div class="leafbreadcumre position-absolute">
-					<img class="lazyload"
-						src="../OurImages/OtherImage/Footer-3.png"
-						alt="divicer blue Object" style="height: 200px;">
-				</div> -->
 			</section>
+
+			<style>
+				/* Background Section */
+				.imliproductbg {
+					background: #D17127 !important;
+					padding: 20px 0;
+					position: relative;
+					z-index: 2;
+					overflow: hidden;
+				}
+
+				/* Logo Container */
+				.logo-container {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					min-height: 80px;
+				}
+
+				.logo-image {
+					max-width: 300px;
+					width: 100%;
+					height: auto;
+					object-fit: contain;
+					transition: transform 0.3s ease;
+				}
+
+				.logo-image:hover {
+					transform: scale(1.05);
+				}
+
+				.imlidivider img {
+					width: 100%;
+					height: auto;
+					object-fit: contain;
+				}
+
+				/* Responsive breakpoints */
+				@media (max-width: 1024px) {
+					.logo-image {
+						max-width: 250px;
+					}
+				}
+
+				@media (max-width: 768px) {
+					.logo-image {
+						max-width: 200px;
+					}
+				}
+
+				@media (max-width: 480px) {
+					.logo-image {
+						max-width: 155px;
+					}
+
+					.logo-container {
+						min-height: 60px;
+					}
+				}
+
+				@media (max-width: 320px) {
+					.logo-image {
+						max-width: 120px;
+					}
+				}
+			</style>
+
+			<!-- ---------------- New Banner end----------------------------- -->
+
 
 			<style>
 				.bread-crumb li.parent_brdcum {
@@ -316,7 +351,7 @@
 								<div class="container">
 									<div class="row justify-content-between">
 										<div class="col-11 col-lg-6 wow fadeInLeft">
-											<img src="../OurImages/ProductPNG/imiproductimage.png" alt="Fruit Freeze"
+											<img src="../OurImages/ProductPNG/imli p.png" alt="Fruit Freeze"
 												class="lazyload" />
 										</div>
 										<div class="col-lg-6 col-xl-5 wow fadeInRight">
@@ -363,6 +398,16 @@
 												</div>
 												<h2>Imli Mockup Box</h2>
 											</a>
+
+											<button class="view-details-btn" data-name="Imli Box"
+											data-weight="280g" data-price="₹85"
+											data-description="Experience the perfect blend of natural fruit flavors with our premium Fruit Freeze treats. Made from carefully selected fresh fruits and frozen to perfection, each bite delivers an explosion of authentic taste."
+											data-shop-url="https://your-shop.com/fruit-freeze"
+											onclick="openProductPopup(this)">
+											<i class="fas fa-shopping-cart"></i>
+											Shop Now
+										</button>
+
 										</div>
 
 										<div class="col-12 col-md-6 col-lg-4 productItem wow fadeInDown">
@@ -438,7 +483,8 @@
 													height: 365px !important;
 													width: 567px !important;
 												}
-												.imlibannerproduct{
+
+												.imlibannerproduct {
 													height: 245px;
 												}
 											}
@@ -476,7 +522,8 @@
 					<div class="carousel-inner" style="margin-top: 10px !important;">
 						<div class="carousel-item active itembanner">
 							<img src="../OurImages/Banner/imliproductbanner.png"
-								alt="Jitne aasman mein sitaare hain, utni is mein sev hai" style="width: 2000px;" class="imlibannerproduct" />
+								alt="Jitne aasman mein sitaare hain, utni is mein sev hai" style="width: 2000px;"
+								class="imlibannerproduct" />
 							<!-- <img src="./OurImages/Banner/itembanner3.png"
 								class="d-block d-sm-none"
 								alt="Jitne aasman mein sitaare hain, utni is mein sev hai" />  -->
@@ -799,6 +846,83 @@ filter: drop-shadow(5px 5px 5px #222);     transform: translateX(-58px) !importa
 	<script nomodule>
 		loadIOPolyfillIfNeeded().then(lazyLoadWhenVisible);
 	</script>
+
+<!-- -------------------------------------------products  pop up body ------------------------------------------- -->
+
+	<!-- Single Reusable Popup -->
+
+	<!-- Demo Button -->
+	<button class="demo-btn" onclick="openPopup()" style="display: none;">
+		<i class="fas fa-eye"></i> View Product Details
+	</button>
+
+	<!-- Popup Modal -->
+	<div class="popup-overlay" id="popupOverlay" onclick="closePopup()">
+		<div class="popup-container" onclick="event.stopPropagation()">
+			<!-- Popup Header -->
+			<div class="popup-header">
+				<button class="close-btn" onclick="closePopup()">
+					<i class="fas fa-times"></i>
+				</button>
+				<h3 id="popupTitle">Premium Coffee Blend</h3>
+			</div>
+
+			<!-- Popup Body -->
+			<div class="popup-body">
+				<!-- Product Details -->
+				<div class="product-details">
+					<div class="detail-item">
+						<div class="detail-label">
+							<i class="fas fa-weight-hanging"></i> Weight
+						</div>
+						<div class="detail-value" id="popupWeight">250g</div>
+					</div>
+
+					<div class="detail-item">
+						<div class="detail-label">
+							<i class="fas fa-tag"></i> Price
+						</div>
+						<div class="detail-value price-value" id="popupPrice">₹299</div>
+					</div>
+				</div>
+
+				<!-- Description -->
+				<div class="description">
+					<h4>
+						<i class="fas fa-info-circle"></i>
+						Product Description
+					</h4>
+					<p id="popupDescription">Experience the perfect blend of premium coffee beans sourced from the
+						finest plantations. Our signature roast delivers a rich, aromatic flavor that awakens your
+						senses and energizes your day. Perfect for coffee enthusiasts who appreciate quality and taste.
+					</p>
+				</div>
+
+				<!-- Shop Now Button -->
+				<button class="shop-now-btn" id="shopNowBtn" onclick="goToShop()">
+					<i class="fas fa-shopping-cart"></i>
+					Shop Now
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- -------------------------------------------products  pop up body End ------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 

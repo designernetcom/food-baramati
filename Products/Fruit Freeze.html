@@ -131,7 +131,7 @@
 				<div class="d-flex flex-wrap justify-content-between align-items-center w-100 position-relative">
 					<div class="logo d-lg-flex d-xl-none">
 						<a href="../index.html">
-							<img src="../OurImages/Logo/Fruit freeze logo.png" alt="Mayur GELS" />
+							<img src="../OurImages/Logo/MayurLogoFinal.png" alt="Mayur GELS" />
 						</a>
 						<!-- <div class="shop_btn mbl">
 							<a href="#">Shop Now <i class="fas fa-shopping-cart"></i></a>
@@ -211,7 +211,7 @@
 							</div>
 							<div class="logo d-xl-flex d-none">
 								<a href="../index.html">
-									<img src="../OurImages/Logo/Fruit freeze logo.png" alt="Mayur GELS" />
+									<img src="../OurImages/Logo/MayurLogoFinal.png" alt="Mayur GELS" />
 								</a>
 							</div>
 							<div class="navmenu">
@@ -250,49 +250,99 @@
 		</header>
 		<main>
 
+			<!-- ---------------------- new banner  ------------------ -->
+
+
 			<section class="inner-header">
-				<div class="breadcrumbrowblue">
+				<div class="fruitproductbg breadcrumbrowblue">
 					<div class="container">
-						<div class="pagetitle fruitFreezePage">
-							Fruit Freeze </div>
-						<!-- <ul class="bread-crumb">
-							<li class="breadcrumb_links_path_parent"><a href="../index.html" title="Home">Home</a></li>
-							<li class="active">About</li>
-						</ul> -->
-
-
-						<style>
-							.fruitFreezePage {
-								background-image: url('../OurImages/Banner/FruitFreezeBG1.jpg');
-								/* Adjust path to your image */
-								background-size: cover;
-								/* Ensures the image covers the text area */
-								background-repeat: no-repeat;
-								-webkit-background-clip: text;
-								/* Clips the image to the text */
-								-webkit-text-fill-color: transparent;
-								/* Makes the text transparent to show the image */
-								font-size: 110px;
-								/* Adjust font size as needed */
-								text-align: center;
-								text-shadow: none !important;
-								margin: 0;
-								-webkit-font-smoothing: antialiased;
-							}
-						</style>
-
-
+						<div class="logo-container">
+							<img class="pphoto logo-image lazyload" src="../OurImages/Logo/Fruit freeze logo.png"
+								alt="Company Logo" loading="lazy" />
+						</div>
 					</div>
 				</div>
 				<div class="divider-blue-inner w-100">
-					<img class="lazyload" src="../OurImages/Banner/Blue-Divider.png" alt="divicer blue Object" />
+					<img class="lazyload" src="../OurImages/Banner/fruitproductdivider.png" alt="divider blue Object" />
 				</div>
-				<!-- <div class="leafbreadcumre position-absolute">
-					<img class="lazyload"
-						src="../OurImages/OtherImage/Footer-3.png"
-						alt="divicer blue Object" style="height: 200px;">
-				</div> -->
 			</section>
+
+			<style>
+				/* Background Section */
+				.fruitproductbg {
+					background: #56C7FA;
+					padding: 20px 0;
+					position: relative;
+					z-index: 2;
+					overflow: hidden;
+				}
+
+				/* Logo Container */
+				.logo-container {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					min-height: 80px;
+				}
+
+				.logo-image {
+					max-width: 300px;
+					width: 100%;
+					height: auto;
+					object-fit: contain;
+					transition: transform 0.3s ease;
+				}
+
+				.logo-image:hover {
+					transform: scale(1.05);
+				}
+
+				.imlidivider img {
+					width: 100%;
+					height: auto;
+					object-fit: contain;
+				}
+
+				/* Responsive breakpoints */
+				@media (max-width: 1024px) {
+					.logo-image {
+						max-width: 250px;
+					}
+				}
+
+				@media (max-width: 768px) {
+					.logo-image {
+						max-width: 200px;
+					}
+				}
+
+				@media (max-width: 480px) {
+					.logo-image {
+						max-width: 250px;
+					}
+
+					.logo-container {
+						min-height: 60px;
+					}
+				}
+
+				@media (max-width: 320px) {
+					.logo-image {
+						max-width: 120px;
+					}
+				}
+
+				@media (min-width: 1001px) {
+					.pphoto{
+						transform: translateY(20px);
+					}
+				}
+
+
+			</style>
+
+			<!-- ---------------------- new banner end    ------------------ -->
 
 			<style>
 				.bread-crumb li.parent_brdcum {
@@ -337,19 +387,18 @@
 									<div class="row justify-content-center mb-100">
 										<div class="col-lg-8">
 											<h1>Fruit Freeze <span> A Sweet Symphony of Flavor</span></h1>
-											<p style="text-align: center;">Explore our vibrant and playful packaging,
+											<p style="text-align: center;">Explore our vibrant and playful
+												packaging,
 												designed to capture the
 												essence of Fruit Freeze. Each pack is crafted to preserve the freshness
 												and fruity delight inside, making it perfect for sharing, gifting, or
 												enjoying on the go!
 											</p>
-
 										</div>
 									</div>
 									<div class="row justify-content-center">
 										<div class="col-12 col-md-6 col-lg-4 productItem wow fadeInDown">
-											<a id="1176" data-post="products_cpt" href="#"
-												class="productitem ProductToggle">
+											<a class="productitem ProductToggle">
 												<div class="prothumb mockup1">
 													<img class="lazyload "
 														src="../OurImages/ProductPNG/fruitfrezzernewjar - Product.png"
@@ -357,11 +406,20 @@
 												</div>
 												<h2>Fruit Freeze Mockup</h2>
 											</a>
+
+											<button class="view-details-btn" data-name="Fruit Freeze Mockup"
+												data-weight="580g" data-price="₹150"
+												data-description="Experience the perfect blend of natural fruit flavors with our premium Fruit Freeze treats. Made from carefully selected fresh fruits and frozen to perfection, each bite delivers an explosion of authentic taste."
+												data-shop-url="https://your-shop.com/fruit-freeze"
+												onclick="openProductPopup(this)">
+												<i class="fas fa-shopping-cart"></i>
+												Shop Now
+											</button>
+
 										</div>
 
 										<div class="col-12 col-md-6 col-lg-4 productItem wow fadeInDown">
-											<a id="1173" data-post="products_cpt" href="#"
-												class="productitem ProductToggle">
+											<a class="productitem ProductToggle">
 												<div class="prothumb mockup1">
 													<img class="lazyload"
 														src="../OurImages/ProductPNG/Fruit freeze jar 1.png"
@@ -369,23 +427,40 @@
 												</div>
 												<h2>Fruit Freeze Jar </h2>
 											</a>
+
+											<button class="view-details-btn" data-name="Fruit Freeze Jar"
+											data-weight="820g" data-price="₹200"
+											data-description="Experience the perfect blend of natural fruit flavors with our premium Fruit Freeze treats. Made from carefully selected fresh fruits and frozen to perfection, each bite delivers an explosion of authentic taste."
+											data-shop-url="https://your-shop.com/fruit-freeze"
+											onclick="openProductPopup(this)">
+											<i class="fas fa-shopping-cart"></i>
+											Shop Now
+										</button>
+
 										</div>
 
 										<div class="col-12 col-md-6 col-lg-4 productItem wow fadeInDown">
-											<a id="324" data-post="products_cpt" href="#"
-												class="productitem ProductToggle">
+											<a class="productitem ProductToggle">
 												<div class="prothumb jar">
 													<img class="lazyload"
 														src="../OurImages/ProductPNG/Fruit freeze jar 2.png"
 														alt="Makai Pop" />
 												</div>
-												<h2>Fruit Freeze Jar</h2>
+												<h2>Fruit Freeze Container</h2>
 											</a>
+											
+											<button class="view-details-btn" data-name="Fruit Freeze Container"
+											data-weight="620g" data-price="₹160"
+											data-description="Experience the perfect blend of natural fruit flavors with our premium Fruit Freeze treats. Made from carefully selected fresh fruits and frozen to perfection, each bite delivers an explosion of authentic taste."
+											data-shop-url="https://your-shop.com/fruit-freeze"
+											onclick="openProductPopup(this)">
+											<i class="fas fa-shopping-cart"></i>
+											Shop Now
+										</button>
 										</div>
 
 										<div class="col-12 col-md-6 col-lg-4 productItem wow fadeInDown">
-											<a id="321" data-post="products_cpt" href="#"
-												class="productitem ProductToggle">
+											<a class="productitem ProductToggle">
 												<div class="prothumb mockup2 ">
 													<img class="lazyload"
 														src="../OurImages/ProductPNG/Fruit freeze mockup.png"
@@ -393,6 +468,16 @@
 												</div>
 												<h2>Fruit Freeze Mockup</h2>
 											</a>
+
+											<button class="view-details-btn" data-name="Fruit Freeze Mockup"
+											data-weight="--" data-price="--"
+											data-description="Experience the perfect blend of natural fruit flavors with our premium Fruit Freeze treats. Made from carefully selected fresh fruits and frozen to perfection, each bite delivers an explosion of authentic taste."
+											data-shop-url="https://your-shop.com/fruit-freeze"
+											onclick="openProductPopup(this)">
+											<i class="fas fa-shopping-cart"></i>
+											Shop Now
+										</button>
+										
 										</div>
 
 										<style>
@@ -405,14 +490,16 @@
 											@media screen and (max-width: 576px) {
 												.mockup1 img {
 													width: 354px !important;
+													height: 310px !important;
 												}
 
 												.jar img {
 													width: 390px !important;
+													height: 310px !important;
 												}
 
 												.mockup2 img {
-													height: 223px !important;
+													height: 200px !important;
 													width: 347px !important;
 												}
 
@@ -779,6 +866,81 @@ filter: drop-shadow(5px 5px 5px #222);     transform: translateX(-58px) !importa
 	<script nomodule>
 		loadIOPolyfillIfNeeded().then(lazyLoadWhenVisible);
 	</script>
+
+
+	<!-- -------------------------------------------products  pop up body ------------------------------------------- -->
+
+	<!-- Single Reusable Popup -->
+
+	<!-- Demo Button -->
+	<button class="demo-btn" onclick="openPopup()" style="display: none;">
+		<i class="fas fa-eye"></i> View Product Details
+	</button>
+
+	<!-- Popup Modal -->
+	<div class="popup-overlay" id="popupOverlay" onclick="closePopup()">
+		<div class="popup-container" onclick="event.stopPropagation()">
+			<!-- Popup Header -->
+			<div class="popup-header">
+				<button class="close-btn" onclick="closePopup()">
+					<i class="fas fa-times"></i>
+				</button>
+				<h3 id="popupTitle">Premium Coffee Blend</h3>
+			</div>
+
+			<!-- Popup Body -->
+			<div class="popup-body">
+				<!-- Product Details -->
+				<div class="product-details">
+					<div class="detail-item">
+						<div class="detail-label">
+							<i class="fas fa-weight-hanging"></i> Weight
+						</div>
+						<div class="detail-value" id="popupWeight">250g</div>
+					</div>
+
+					<div class="detail-item">
+						<div class="detail-label">
+							<i class="fas fa-tag"></i> Price
+						</div>
+						<div class="detail-value price-value" id="popupPrice">₹299</div>
+					</div>
+				</div>
+
+				<!-- Description -->
+				<div class="description">
+					<h4>
+						<i class="fas fa-info-circle"></i>
+						Product Description
+					</h4>
+					<p id="popupDescription">Experience the perfect blend of premium coffee beans sourced from the
+						finest plantations. Our signature roast delivers a rich, aromatic flavor that awakens your
+						senses and energizes your day. Perfect for coffee enthusiasts who appreciate quality and taste.
+					</p>
+				</div>
+
+				<!-- Shop Now Button -->
+				<button class="shop-now-btn" id="shopNowBtn" onclick="goToShop()">
+					<i class="fas fa-shopping-cart"></i>
+					Shop Now
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- -------------------------------------------products  pop up body End ------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
 </body>
 
 

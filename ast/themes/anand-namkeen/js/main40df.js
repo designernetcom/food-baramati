@@ -225,3 +225,75 @@
 	
 })(jQuery);
 
+
+// -------------------------------- popup js -----------------------
+
+
+
+
+
+let currentShopUrl = '';
+
+function openProductPopup(button) {
+	// Get product data from button attributes
+	const productData = {
+		name: button.getAttribute('data-name'),
+		// subtitle: button.getAttribute('data-subtitle'),
+		// image: button.getAttribute('data-image'),
+		weight: button.getAttribute('data-weight'),
+		price: button.getAttribute('data-price'),
+		// rating: button.getAttribute('data-rating'),
+		description: button.getAttribute('data-description'),
+		shopUrl: button.getAttribute('data-shop-url')
+	};
+
+	// Update popup content
+	document.getElementById('popupTitle').textContent = productData.name;
+	// document.getElementById('popupSubtitle').textContent = productData.subtitle;
+	// document.getElementById('popupImage').src = productData.image;
+	// document.getElementById('popupImage').alt = productData.name;
+	document.getElementById('popupWeight').textContent = productData.weight;
+	document.getElementById('popupPrice').textContent = productData.price;
+	// document.getElementById('popupRating').textContent = productData.rating;
+	document.getElementById('popupDescription').textContent = productData.description;
+
+	// Store shop URL for the shop button
+	currentShopUrl = productData.shopUrl;
+
+	// Show popup
+	const overlay = document.getElementById('popupOverlay');
+	overlay.classList.add('active');
+	document.body.style.overflow = 'hidden';
+}
+
+function closePopup() {
+	const overlay = document.getElementById('popupOverlay');
+	overlay.classList.remove('active');
+	document.body.style.overflow = 'auto';
+}
+
+function goToShop() {
+	if (currentShopUrl) {
+		window.open(currentShopUrl, '_blank');
+		// Or use window.location.href = currentShopUrl; to navigate in the same tab
+	}
+}
+
+// Close popup on Escape key press
+document.addEventListener('keydown', function(event) {
+	if (event.key === 'Escape') {
+		closePopup();
+	}
+});
+
+// Prevent background scrolling when popup is open
+window.addEventListener('scroll', function() {
+	if (document.getElementById('popupOverlay').classList.contains('active')) {
+		window.scrollTo(0, 0);
+	}
+});
+
+
+
+
+
